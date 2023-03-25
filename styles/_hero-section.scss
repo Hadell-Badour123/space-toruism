@@ -1,0 +1,65 @@
+#hero-section {
+  @include flex($justify-content: space-between, $align-items: flex-end);
+
+  background-image: url('../assets/Bitmap.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  padding: 20rem 20rem;
+}
+
+.text-container {
+  @include flex(column, initial, flex-start);
+  flex: 1;
+
+  h2 {
+    font-family: $Barlow-condensed;
+    font-size: $Heading-5;
+    font-weight: normal;
+    letter-spacing: $Heading-5-char-space;
+    color: $text-color;
+  }
+
+  h1 {
+    font-family: $Bellefair;
+    font-size: $Heading-1;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: $Body-text;
+    font-weight: normal;
+    font-family: $Barlow;
+    line-height: 3.2rem;
+    color: $text-color;
+    max-width: 44.4rem;
+    text-align: justify;
+  }
+}
+
+.button-container {
+  flex: 1;
+  text-align: center;
+
+  button {
+    width: 27.4rem;
+    height: 27.4rem;
+    border-radius: 100%;
+    border: none;
+    font-family: $Bellefair;
+    font-weight: normal;
+    font-size: $Heading-4;
+    letter-spacing: 2px;
+    line-height: 3.7rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    cursor: pointer;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    transition: outline 0.5s ease-out;
+
+    &:hover {
+      outline: 100px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}

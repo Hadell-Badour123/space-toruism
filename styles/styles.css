@@ -1,0 +1,260 @@
+header {
+  position: relative;
+}
+
+.line-container hr {
+  position: absolute;
+  width: 42.5vw;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  z-index: 100;
+  left: 200px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5rem;
+  padding-right: 0;
+}
+
+.logo-container {
+  flex: 1;
+}
+.logo-container img {
+  cursor: pointer;
+}
+
+.nav-items-container {
+  flex: 1;
+  -webkit-backdrop-filter: blur(40.7742px);
+          backdrop-filter: blur(40.7742px);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.nav {
+  --bs-nav-link-color: $white;
+}
+
+.nav-tabs {
+  padding-left: 10rem;
+  --bs-nav-tabs-border-width: 0;
+}
+
+.nav-link {
+  padding: 3rem 0;
+  margin-right: 5vw;
+  letter-spacing: 2.7px;
+  font-size: 1.6rem;
+  font-family: "Barlow Condensed", sans-serif;
+  outline: none;
+}
+.nav-link span {
+  font-weight: bold;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #979797;
+  outline: none;
+  color: #ffffff;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+#hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  background-image: url("../assets/Bitmap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  padding: 20rem 20rem;
+}
+
+.text-container {
+  display: flex;
+  justify-content: initial;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+}
+.text-container h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.8rem;
+  font-weight: normal;
+  letter-spacing: 4.75px;
+  color: #d0d6f9;
+}
+.text-container h1 {
+  font-family: "Bellefair", serif;
+  font-size: 15rem;
+  font-weight: normal;
+}
+.text-container h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-family: "Barlow", sans-serif;
+  line-height: 3.2rem;
+  color: #d0d6f9;
+  max-width: 44.4rem;
+  text-align: justify;
+}
+
+.button-container {
+  flex: 1;
+  text-align: center;
+}
+.button-container button {
+  width: 27.4rem;
+  height: 27.4rem;
+  border-radius: 100%;
+  border: none;
+  font-family: "Bellefair", serif;
+  font-weight: normal;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  line-height: 3.7rem;
+  text-transform: uppercase;
+  color: #0b0d17;
+  cursor: pointer;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  transition: outline 0.5s ease-out;
+}
+.button-container button:hover {
+  outline: 100px solid rgba(255, 255, 255, 0.1);
+}
+
+#destination {
+  min-height: 100vh;
+  background-image: url("../assets/destination-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20rem 20rem;
+  padding-bottom: 10rem;
+}
+#destination #nav-tab {
+  padding-left: 0;
+  color: #d0d6f9;
+}
+#destination .destination-title {
+  margin-bottom: 8rem;
+}
+#destination .destination-title h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.75px;
+  line-height: 3.36rem;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#destination .destination-title h2 span {
+  font-weight: 700;
+  margin-right: 1vw;
+  opacity: 0.25;
+}
+
+.planet-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.planet-content h2 {
+  font-family: "Bellefair", serif;
+  font-size: 10rem;
+  font-weight: normal;
+  line-height: 11.5rem;
+  margin-top: 3.7rem;
+  text-transform: uppercase;
+}
+.planet-content p {
+  font-family: "Barlow", sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: justify;
+  color: #d0d6f9;
+}
+.planet-content hr {
+  margin-top: 5.4rem;
+  margin-bottom: 2.8rem;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: #383b4b;
+}
+
+.travel-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7.9rem;
+       column-gap: 7.9rem;
+}
+.travel-details div:first-child h3, .travel-details div:last-child h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 1.7rem;
+  letter-spacing: 2.35px;
+  color: #d0d6f9;
+  margin-bottom: 1.2rem;
+}
+.travel-details div:first-child div, .travel-details div:last-child div {
+  font-family: "Bellefair", serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+}
+
+.planet-details {
+  max-width: 570px;
+}
+
+#crew {
+  min-height: 100vh;
+  background-image: url("../assets/crew-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  color: #ffffff;
+}/*# sourceMappingURL=styles.css.map */

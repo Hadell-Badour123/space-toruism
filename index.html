@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Space Tourism</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-container">
+        <div class="logo-container">
+          <a href="#">
+            <img src="./assets/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="line-container">
+          <hr />
+        </div>
+        <div class="nav-items-container">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              <span>00</span> HOME
+            </button>
+            <button
+              class="nav-link"
+              id="nav-destination-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-destination"
+              type="button"
+              role="tab"
+              aria-controls="nav-destination"
+              aria-selected="false"
+            >
+              <span>01</span> DESTINATION
+            </button>
+            <button
+              class="nav-link"
+              id="nav-crew-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-crew"
+              type="button"
+              role="tab"
+              aria-controls="nav-crew"
+              aria-selected="false"
+            >
+              <span>02</span> CREW
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              <span>03</span> TECHNOLOGY
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <section id="hero-section">
+            <div class="text-container">
+              <h2>so, you want to travel to</h2>
+              <h1>SPACE</h1>
+              <h3>
+                Let’s face it; if you want to go to space, you might as well genuinely go to outer
+                space and not hover kind of on the edge of it. Well sit back, and relax because
+                we’ll give you a truly out of this world experience!
+              </h3>
+            </div>
+            <div class="button-container">
+              <button type="button">explore</button>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-destination"
+          role="tabpanel"
+          aria-labelledby="nav-destination-tab"
+          tabindex="0"
+        >
+          <section id="destination">
+            <div class="destination-title">
+              <h2>
+                <span>01</span>
+                pick your destination
+              </h2>
+            </div>
+
+            <div>
+              <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-moon-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-moon"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-moon"
+                  aria-selected="true"
+                >
+                  MOON
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-mars-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-mars"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-mars"
+                  aria-selected="false"
+                >
+                  MARS
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-europa-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-europa"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-europa"
+                  aria-selected="false"
+                >
+                  EUROPA
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-titan-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-titan"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-titan"
+                  aria-selected="false"
+                >
+                  TITAN
+                </button>
+              </div>
+
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-moon"
+                  role="tabpanel"
+                  aria-labelledby="nav-moon-tab"
+                  tabindex="0"
+                >
+                  <div class="planet-content">
+                    <div class="planet-image-container">
+                      <img src="./assets/moon.png" alt="moon" />
+                    </div>
+
+                    <div class="planet-details">
+                      <h2>MOON</h2>
+                      <p>
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away
+                        to help regain perspective and come back refreshed. While you’re there, take
+                        in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                      </p>
+                      <hr />
+                      <div class="travel-details">
+                        <div>
+                          <h3>avg. distance</h3>
+                          <div>384,400 <span>KM</span></div>
+                        </div>
+                        <div>
+                          <h3>est. travel time</h3>
+                          <div>3 <span>DAYS</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-mars"
+                  role="tabpanel"
+                  aria-labelledby="nav-mars-tab"
+                  tabindex="0"
+                >
+                  <div class="planet-content">
+                    <div class="planet-image-container">
+                      <img src="./assets/mars.png" alt="mars" />
+                    </div>
+
+                    <div class="planet-details">
+                      <h2>MARS</h2>
+                      <p>
+                        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus
+                        Mons, the tallest planetary mountain in our solar system. It’s two and a
+                        half times the size of Everest!
+                      </p>
+                      <hr />
+                      <div class="travel-details">
+                        <div>
+                          <h3>avg. distance</h3>
+                          <div>255 mil. <span>KM</span></div>
+                        </div>
+                        <div>
+                          <h3>est. travel time</h3>
+                          <div>9 <span>months</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-europa"
+                  role="tabpanel"
+                  aria-labelledby="nav-europa-tab"
+                  tabindex="0"
+                >
+                  <div class="planet-content">
+                    <div class="planet-image-container">
+                      <img src="./assets/europa.png" alt="europa" />
+                    </div>
+
+                    <div class="planet-details">
+                      <h2>europa</h2>
+                      <p>
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter
+                        lover’s dream. With an icy surface, it’s perfect for a bit of ice skating,
+                        curling, hockey, or simple relaxation in your snug wintery cabin.
+                      </p>
+                      <hr />
+                      <div class="travel-details">
+                        <div>
+                          <h3>avg. distance</h3>
+                          <div>628 mil. <span>KM</span></div>
+                        </div>
+                        <div>
+                          <h3>est. travel time</h3>
+                          <div>3 <span>years</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-titan"
+                  role="tabpanel"
+                  aria-labelledby="nav-titan-tab"
+                  tabindex="0"
+                >
+                  <div class="planet-content">
+                    <div class="planet-image-container">
+                      <img src="./assets/titan.png" alt="titan" />
+                    </div>
+
+                    <div class="planet-details">
+                      <h2>titan</h2>
+                      <p>
+                        The only moon known to have a dense atmosphere other than Earth, Titan is a
+                        home away from home (just a few hundred degrees colder!). As a bonus, you
+                        get striking views of the Rings of Saturn.
+                      </p>
+                      <hr />
+                      <div class="travel-details">
+                        <div>
+                          <h3>avg. distance</h3>
+                          <div>1.6 bil. <span>KM</span></div>
+                        </div>
+                        <div>
+                          <h3>est. travel time</h3>
+                          <div>7 <span>years</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-crew"
+          role="tabpanel"
+          aria-labelledby="nav-crew-tab"
+          tabindex="0"
+        >
+          <section id="crew">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-disabled"
+          role="tabpanel"
+          aria-labelledby="nav-disabled-tab"
+          tabindex="0"
+        >
+          ...
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

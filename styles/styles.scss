@@ -1,0 +1,19 @@
+@import 'global';
+@import 'navbar';
+@import 'hero-section';
+@import 'destination';
+@import 'crew';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  color: $white;
+}

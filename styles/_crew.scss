@@ -1,0 +1,14 @@
+#crew {
+  min-height: 100vh;
+  background-image: url('../assets/crew-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
