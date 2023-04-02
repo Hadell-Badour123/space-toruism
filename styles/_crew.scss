@@ -6,6 +6,11 @@
   background-position: center center;
   padding: 20rem;
   padding-bottom: 0;
+
+  @include media-query(mobile) {
+    padding: 2.4rem;
+    padding-top: 148px;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -29,18 +34,31 @@
       font-weight: 700;
     }
   }
+
+  @include media-query(mobile) {
+    text-align: center;
+  }
 }
 
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
   display: flex;
+
+  @include media-query(mobile) {
+    flex-direction: column-reverse;
+  }
 }
 
 .carousel-indicators {
   justify-content: flex-start;
   margin-left: 0;
   margin-bottom: 9.4rem;
+
+  @include media-query(mobile) {
+    left: 35%;
+    top: 50%;
+  }
 }
 
 .crew-text {
@@ -75,6 +93,24 @@
     max-width: 44.4rem;
     color: $text-color;
   }
+
+  @include media-query(mobile) {
+    text-align: center;
+    margin-bottom: 79px;
+    p {
+      max-width: 327px;
+      margin: auto;
+      font-size: 15px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
 }
 
 .crew-image-container {
@@ -86,5 +122,16 @@
 
   img {
     min-height: 75.4vh;
+  }
+
+  @include media-query(mobile) {
+    border-bottom: 1px solid #383b4b;
+    margin-top: 32px;
+    img {
+      max-width: 327px;
+      max-height: 223px;
+      min-height: auto;
+      object-fit: contain;
+    }
   }
 }
