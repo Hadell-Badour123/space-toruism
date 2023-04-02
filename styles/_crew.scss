@@ -5,10 +5,86 @@
   background-size: cover;
   background-position: center center;
   padding: 20rem;
+  padding-bottom: 0;
 }
 
 .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 15px;
   border-radius: 100%;
+  margin-right: 2.4rem;
+  margin-left: 0;
+}
+
+.crew-title {
+  h2 {
+    color: $white;
+    font-family: $Barlow-condensed;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: $Heading-5;
+
+    span {
+      opacity: 0.25;
+      font-weight: 700;
+    }
+  }
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-indicators {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-bottom: 9.4rem;
+}
+
+.crew-text {
+  flex: 1;
+
+  h2 {
+    font-family: $Bellefair;
+    font-weight: 400;
+    font-size: $Heading-4;
+    color: $white;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-top: 15.4rem;
+    line-height: 3.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-family: $Bellefair;
+    font-weight: 400;
+    font-size: $Heading-3;
+    text-transform: uppercase;
+    line-height: 6.4rem;
+    margin-bottom: 2.7rem;
+  }
+
+  p {
+    font-family: $Barlow;
+    font-weight: 400;
+    font-size: $Body-text;
+    line-height: 3.2rem;
+    max-width: 44.4rem;
+    color: $text-color;
+  }
+}
+
+.crew-image-container {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  img {
+    min-height: 75.4vh;
+  }
 }

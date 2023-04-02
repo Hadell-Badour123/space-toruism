@@ -237,12 +237,181 @@ header {
   background-size: cover;
   background-position: center center;
   padding: 20rem;
+  padding-bottom: 0;
 }
 
 .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 15px;
   border-radius: 100%;
+  margin-right: 2.4rem;
+  margin-left: 0;
+}
+
+.crew-title h2 {
+  color: #ffffff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+}
+.crew-title h2 span {
+  opacity: 0.25;
+  font-weight: 700;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-indicators {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-bottom: 9.4rem;
+}
+
+.crew-text {
+  flex: 1;
+}
+.crew-text h2 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: #ffffff;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-top: 15.4rem;
+  line-height: 3.7rem;
+  margin-bottom: 1.5rem;
+}
+.crew-text h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  line-height: 6.4rem;
+  margin-bottom: 2.7rem;
+}
+.crew-text p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  max-width: 44.4rem;
+  color: #d0d6f9;
+}
+
+.crew-image-container {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.crew-image-container img {
+  min-height: 75.4vh;
+}
+
+#technology {
+  min-height: 100vh;
+  background-image: url("../assets/technology-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20rem;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.technology-title {
+  margin-bottom: 13.7rem;
+}
+.technology-title h1 {
+  color: #ffffff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+}
+.technology-title h1 span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tab-content {
+  flex: 1;
+}
+
+#technology .tabs-container .ttt .nav-link.active {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #0b0d17;
+}
+
+.nav-tabs .technology-nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 3.2rem;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.flex-active-tab.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.text-content {
+  font-weight: 400;
+}
+.text-content span {
+  display: block;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+  margin-bottom: 1.1rem;
+}
+.text-content h2 {
+  color: #ffffff;
+  font-family: "Bellefair", serif;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  margin-bottom: 1.7rem;
+}
+.text-content p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #d0d6f9;
+  max-width: 44.4rem;
 }
 
 * {
