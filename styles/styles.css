@@ -44,6 +44,15 @@ header {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.nav-items-container-desktop {
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .nav-items-container-desktop {
+    display: none;
+  }
+}
+
 .nav {
   --bs-nav-link-color: $white;
 }
@@ -92,6 +101,15 @@ header {
 @media (max-width: 600px) {
   .offcanvas-body {
     padding: 0;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+}
+@media (max-width: 600px) {
+  .navbar-toggler {
+    display: initial;
   }
 }
 

@@ -42,6 +42,14 @@ header {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.nav-items-container-desktop {
+  flex: 1;
+
+  @include media-query(mobile) {
+    display: none;
+  }
+}
+
 .nav {
   --bs-nav-link-color: $white;
 }
@@ -89,5 +97,13 @@ header {
 .offcanvas-body {
   @include media-query(mobile) {
     padding: 0;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+
+  @include media-query(mobile) {
+    display: initial;
   }
 }
