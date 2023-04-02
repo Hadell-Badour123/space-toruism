@@ -30,6 +30,33 @@
       }
     }
   }
+
+  @include media-query(mobile) {
+    padding: 2.4rem;
+    padding-top: 148px;
+
+    #nav-tab {
+      flex-direction: row;
+      justify-content: center !important;
+      padding: 0 5rem;
+      padding-bottom: 10rem;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      border-right: none;
+      border-bottom: 3px solid $white;
+    }
+
+    .nav-tabs .nav-link {
+      border-bottom: 3px solid transparent;
+      flex: 1;
+    }
+
+    .destination-title {
+      text-align: center;
+    }
+  }
 }
 
 .planet-content {
@@ -61,6 +88,15 @@
     border: none;
     background-color: #383b4b;
   }
+
+  @include media-query(mobile) {
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+  }
 }
 
 .travel-details {
@@ -89,8 +125,21 @@
       text-transform: uppercase;
     }
   }
+
+  @include media-query(mobile) {
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 58px;
+    margin-top: 32px;
+  }
 }
 
 .planet-details {
   max-width: 570px;
+}
+
+.planet-image-container {
+  img {
+    width: 60%;
+  }
 }

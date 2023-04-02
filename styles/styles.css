@@ -25,6 +25,11 @@ header {
   padding: 5rem;
   padding-right: 0;
 }
+@media (max-width: 600px) {
+  .navbar-container {
+    padding-right: 5rem;
+  }
+}
 
 .logo-container {
   flex: 1;
@@ -46,6 +51,11 @@ header {
 .nav-tabs {
   flex: 1;
   --bs-nav-tabs-border-width: 0;
+}
+@media (max-width: 600px) {
+  .nav-tabs {
+    flex-direction: column;
+  }
 }
 
 .nav-link {
@@ -70,6 +80,19 @@ header {
   border: none;
   border-bottom: 2px solid #ffffff;
   color: #ffffff;
+}
+@media (max-width: 600px) {
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    border-bottom: none;
+    border-right: 5px solid #ffffff;
+  }
+}
+
+@media (max-width: 600px) {
+  .offcanvas-body {
+    padding: 0;
+  }
 }
 
 #hero-section {
@@ -191,6 +214,30 @@ header {
   margin-right: 1vw;
   opacity: 0.25;
 }
+@media (max-width: 600px) {
+  #destination {
+    padding: 2.4rem;
+    padding-top: 148px;
+  }
+  #destination #nav-tab {
+    flex-direction: row;
+    justify-content: center !important;
+    padding: 0 5rem;
+    padding-bottom: 10rem;
+  }
+  #destination .nav-tabs .nav-item.show .nav-link,
+  #destination .nav-tabs .nav-link.active {
+    border-right: none;
+    border-bottom: 3px solid #ffffff;
+  }
+  #destination .nav-tabs .nav-link {
+    border-bottom: 3px solid transparent;
+    flex: 1;
+  }
+  #destination .destination-title {
+    text-align: center;
+  }
+}
 
 .planet-content {
   display: flex;
@@ -222,6 +269,15 @@ header {
   border: none;
   background-color: #383b4b;
 }
+@media (max-width: 600px) {
+  .planet-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .planet-content p {
+    text-align: center;
+  }
+}
 
 .travel-details {
   display: flex;
@@ -248,9 +304,21 @@ header {
   line-height: 3.2rem;
   text-transform: uppercase;
 }
+@media (max-width: 600px) {
+  .travel-details {
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 58px;
+    margin-top: 32px;
+  }
+}
 
 .planet-details {
   max-width: 570px;
+}
+
+.planet-image-container img {
+  width: 60%;
 }
 
 #crew {

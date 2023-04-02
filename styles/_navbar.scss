@@ -24,6 +24,10 @@ header {
   right: 0;
   padding: 5rem;
   padding-right: 0;
+
+  @include media-query(mobile) {
+    padding-right: 5rem;
+  }
 }
 
 .logo-container {
@@ -45,6 +49,10 @@ header {
 .nav-tabs {
   flex: 1;
   --bs-nav-tabs-border-width: 0;
+
+  @include media-query(mobile) {
+    flex-direction: column;
+  }
 }
 
 .nav-link {
@@ -71,4 +79,15 @@ header {
   border: none;
   border-bottom: 2px solid $white;
   color: $white;
+
+  @include media-query(mobile) {
+    border-bottom: none;
+    border-right: 5px solid $white;
+  }
+}
+
+.offcanvas-body {
+  @include media-query(mobile) {
+    padding: 0;
+  }
 }
