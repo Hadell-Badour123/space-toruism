@@ -7,10 +7,22 @@
   background-position: center center;
   min-height: 100vh;
   padding: 20rem 20rem;
+
+  @include media-query(mobile) {
+    @include flex(column, center, center);
+
+    padding: 0;
+    padding-top: 148px;
+    background-image: url('../assets/home-mobile.png');
+  }
 }
 
 .text-container {
   @include flex(column, initial, flex-start);
+  @include media-query(mobile) {
+    @include flex(column, initial, center);
+  }
+
   flex: 1;
 
   h2 {
@@ -35,6 +47,10 @@
     color: $text-color;
     max-width: 44.4rem;
     text-align: justify;
+
+    @include media-query(mobile) {
+      text-align: center;
+    }
   }
 }
 

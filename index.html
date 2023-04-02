@@ -22,65 +22,94 @@
   </head>
   <body>
     <header>
-      <nav class="navbar-container">
+      <nav class="navbar-container navbar navbar-dark fixed-top">
         <div class="logo-container">
           <a href="#">
             <img src="./assets/logo.svg" alt="logo" />
           </a>
         </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="line-container">
           <hr />
         </div>
-        <div class="nav-items-container">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
             <button
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
               type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              <span>00</span> HOME
-            </button>
-            <button
-              class="nav-link"
-              id="nav-destination-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-destination"
-              type="button"
-              role="tab"
-              aria-controls="nav-destination"
-              aria-selected="false"
-            >
-              <span>01</span> DESTINATION
-            </button>
-            <button
-              class="nav-link"
-              id="nav-crew-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-crew"
-              type="button"
-              role="tab"
-              aria-controls="nav-crew"
-              aria-selected="false"
-            >
-              <span>02</span> CREW
-            </button>
-            <button
-              class="nav-link"
-              id="nav-technology-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-technology"
-              type="button"
-              role="tab"
-              aria-controls="nav-technology"
-              aria-selected="false"
-            >
-              <span>03</span> TECHNOLOGY
-            </button>
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="nav-items-container">
+              <div class="nav nav-tabs justify-content-evenly" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active nav-item"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  <span>00</span> HOME
+                </button>
+                <button
+                  class="nav-link nav-item"
+                  id="nav-destination-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-destination"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-destination"
+                  aria-selected="false"
+                >
+                  <span>01</span> DESTINATION
+                </button>
+                <button
+                  class="nav-link nav-item"
+                  id="nav-crew-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-crew"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-crew"
+                  aria-selected="false"
+                >
+                  <span>02</span> CREW
+                </button>
+                <button
+                  class="nav-link nav-item"
+                  id="nav-technology-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-technology"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-technology"
+                  aria-selected="false"
+                >
+                  <span>03</span> TECHNOLOGY
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

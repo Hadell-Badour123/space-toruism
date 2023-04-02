@@ -3,4 +3,16 @@
   justify-content: $justify-content;
   align-items: $align-items;
   flex-direction: $direction;
-} ;
+}
+
+@mixin media-query($point) {
+  @if $point == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+}

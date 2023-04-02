@@ -13,6 +13,10 @@
 
 html {
   font-size: 62.5% !important;
+
+  @include media-query(mobile) {
+    font-size: 40% !important;
+  }
 }
 
 body {

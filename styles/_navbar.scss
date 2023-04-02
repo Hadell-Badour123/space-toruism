@@ -5,12 +5,13 @@ header {
 .line-container {
   hr {
     position: absolute;
-    width: 42.5vw;
+    width: 24vw;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.2);
     border: 0;
     z-index: 100;
-    left: 200px;
+    left: 150px;
+    top: 47%;
   }
 }
 
@@ -33,7 +34,6 @@ header {
 }
 
 .nav-items-container {
-  flex: 1;
   backdrop-filter: blur(40.7742px);
   background: rgba(255, 255, 255, 0.04);
 }
@@ -43,13 +43,12 @@ header {
 }
 
 .nav-tabs {
-  padding-left: 10rem;
+  flex: 1;
   --bs-nav-tabs-border-width: 0;
 }
 
 .nav-link {
   padding: 3rem 0;
-  margin-right: 5vw;
   letter-spacing: $Nav-text-char-space;
   font-size: $Nav-text;
   font-family: $Barlow-condensed;
